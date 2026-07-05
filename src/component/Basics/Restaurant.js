@@ -17,9 +17,12 @@ console.log(uniqueList);
 const Restaurant = () => {
     const [menuData, setMenuData] = useState (Menu);
     const menuList = uniqueList;
+    const [activeCategory, setActiveCategory] = useState ("All");
     // console.log(Menu);
 
     const filterItem = (category) => {
+
+        setActiveCategory(category);
 
         if(category === "All") {
             setMenuData (Menu);
@@ -37,7 +40,7 @@ const Restaurant = () => {
 
 
         {/*SENDING PROPS*/}
-        <Navbar filterItem = {filterItem} menuList={menuList}/>
+        <Navbar filterItem = {filterItem} menuList={menuList} activeCategory={activeCategory}/>
         <MenuCard menuData= {menuData} />          
     </>
   )

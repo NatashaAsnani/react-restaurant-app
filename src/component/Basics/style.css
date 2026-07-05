@@ -8,6 +8,17 @@ body{
 
 } */
 
+.card{
+    border-radius: 15px !important;
+    cursor: pointer;
+    transition: all 0.5s ease !important;
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
 .card-circle{
     border-radius: 25px;
     padding-left: 6px;
@@ -24,10 +35,25 @@ body{
     color: red;
 }
 
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 .images{
-    width: 350px;
-    height: 290px;
+    width: 350px !important;
+    height: 290px !important;
     object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card:hover .images{
+    transform: scale(1.05);
+    border-radius: 15px;
 }
 
 .read{
@@ -50,4 +76,8 @@ body{
     margin-top: 20px;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+.activebtn{
+    border-bottom: 5px solid crimson !important;
 }

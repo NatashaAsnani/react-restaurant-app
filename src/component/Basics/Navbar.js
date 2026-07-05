@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = ({filterItem, menuList}) => {
+const Navbar = ({filterItem, menuList, activeCategory}) => {
   return (
     <>
         <div className="container mt-5 d-flex justify-content-center">
@@ -9,21 +9,13 @@ const Navbar = ({filterItem, menuList}) => {
                     menuList.map((curElem) => {
                         return(
                             <>
-                                <button className='btn fw-bold mx-3'onClick= {() => filterItem(curElem)}>
+                                <button className= {activeCategory === curElem ? 'btn fw-bold mx-3 activebtn' : 'btn fw-bold mx-3'} onClick= {() => filterItem(curElem)} >
                                     {curElem}
                                 </button>
                             </>
                         )
                     })
                 }
-                {/* <button className='btn fw-bold mx-3'onClick= {() => filterItem("Lunch")}>Lunch
-                </button>
-                <button className='btn fw-bold mx-3'onClick= {() => filterItem("Snacks")}>Snacks
-                </button>
-                <button className='btn fw-bold mx-3'onClick= {() => filterItem("Dinner")}>Dinner
-                </button>
-                <button className='btn fw-bold mx-3'onClick= {() => setMenuData(Menu)}>All
-                </button> */}
             </div>
         </div>
     </>
