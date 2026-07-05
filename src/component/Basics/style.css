@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(250, 235, 215, 0.644) !important;
+}
+
+/* nav{
+    border-radius: 15px;
+    border: 1px solid ;
+
+} */
+
+.card-circle{
+    border-radius: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid;
+}
+
+.card-category{
+    display: block;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.images{
+    width: 350px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.read{
+    background-color:cornflowerblue;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.order{
+    background-color: crimson;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    padding: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
