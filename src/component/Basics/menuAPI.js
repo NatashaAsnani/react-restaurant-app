@@ -11,7 +11,7 @@ const Menu = [
 
 {
     id: 2,
-    image: "images/maggie.avif",
+    image: "images/pasta.jpg",
     name: "Pasta",
     category: "Lunch",
     description: "Creamy white sauce pasta tossed with fresh vegetables and melted cheese, cooked to perfection for a rich and delicious lunch.",
