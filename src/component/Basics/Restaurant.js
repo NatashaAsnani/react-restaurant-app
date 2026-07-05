@@ -16,7 +16,7 @@ console.log(uniqueList);
 
 const Restaurant = () => {
     const [menuData, setMenuData] = useState (Menu);
-    const [menuList, setMenuList] = useState (uniqueList);
+    const menuList = uniqueList;
     // console.log(Menu);
 
     const filterItem = (category) => {
@@ -33,10 +33,12 @@ const Restaurant = () => {
     }
   return (
     <>
-        {/* menuData is an attribute same as in img tag there are certain attributes, so here this is also an attribute of MenuCard and you can name it anything */}
+          {/* menuData is an attribute same as in img tag there are certain attributes, so here this is also an attribute of MenuCard and you can name it anything  */}
 
+
+        {/*SENDING PROPS*/}
         <Navbar filterItem = {filterItem} menuList={menuList}/>
-        <MenuCard menuData= {menuData} />          {/*SENDING PROPS*/}
+        <MenuCard menuData= {menuData} />          
     </>
   )
 }

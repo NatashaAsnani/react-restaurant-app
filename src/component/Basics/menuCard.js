@@ -1,7 +1,7 @@
 import React from 'react';
 
-
-const menuCard = ( {menuData} ) => {                    {/*RECEIVING/ACCEPTING PROPS*/}
+// RECEIVING/ACCEPTING PROPS
+const MenuCard = ( {menuData} ) => {                    
     console.log( menuData );
     return (
         <>
@@ -43,4 +43,4 @@ const menuCard = ( {menuData} ) => {                    {/*RECEIVING/ACCEPTING P
   )
 }
 
-export default menuCard
+export default MenuCard;
