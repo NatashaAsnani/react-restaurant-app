@@ -57,11 +57,11 @@ body{
 }
 
 .read{
-    background-color:cornflowerblue;
+    background-color:darkorange;
     color: white;
     border-radius: 15px;
     text-align: center;
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -76,6 +76,10 @@ body{
     margin-top: 20px;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+.ordered{
+    background-color: green;
 }
 
 .activebtn{
