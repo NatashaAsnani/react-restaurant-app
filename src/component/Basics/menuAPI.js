@@ -43,7 +43,7 @@ const Menu = [
 {
     id: 5,
     image: "images/broast.jpg",
-    name: "Chicken Brost",
+    name: "Chicken Broast",
     category: "Lunch",
     description: "Golden crispy chicken broast with a crunchy coating and tender meat inside, served with fries and dipping sauce.",
     rating: 3.5,
